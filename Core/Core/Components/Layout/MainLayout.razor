@@ -10,9 +10,11 @@
     </RadzenHeader>
     <RadzenSidebar @bind-Expanded="@sidebar1Expanded">
         <RadzenPanelMenu>
-            <RadzenPanelMenuItem Path="buttons" Text="Home" Icon="home" />
+            <RadzenPanelMenuItem Path="/" Text="Home" Icon="home" />
             <RadzenPanelMenuItem Path="/auth/auth" Text="Login" Icon="account_box" />
             <RadzenPanelMenuItem Path="/user/create" Text="Create User" Icon="account_box" />
+            <RadzenPanelMenuItem Path="/country/create" Text="Create Country" Icon="account_box" />
+            <RadzenPanelMenuItem Path="/country/list" Text="List Country" Icon="account_box" />
         </RadzenPanelMenu>
     </RadzenSidebar>
     <RadzenBody>
@@ -24,6 +26,8 @@
         Footer
     </RadzenFooter>
 </RadzenLayout>
+
+<Core.Framework.Client.Components.Layout.UiGlobals />
 
 <div id="blazor-error-ui">
     An unhandled error has occurred.

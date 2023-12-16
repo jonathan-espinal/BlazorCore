@@ -1,6 +1,6 @@
 using Core.Client;
 using Core.Components;
-using Microsoft.AspNetCore.Builder;
+using Core.Framework.Common.Lib.I18N;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
 
-BuilderdProgram.Builder<AppConfig>(builder, new AppConfig());
+BuilderdProgram.Builder<AppConfig>(builder, new AppConfig(new I18N()));
 
 var app = builder.Build();
 
