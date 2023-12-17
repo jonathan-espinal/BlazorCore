@@ -9,7 +9,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
 
-BuilderdProgram.Builder<AppConfig>(builder, new AppConfig(new I18N()));
+BuilderdProgram.Builder<AppConfig>(builder, new AppConfig());
 
 var app = builder.Build();
 
